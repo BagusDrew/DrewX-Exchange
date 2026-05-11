@@ -113,7 +113,7 @@ class _OrderBookScreenState extends State<OrderBookScreen> {
                                         alignment: Alignment.centerRight,
                                         child: Container(
                                           height: 28,
-                                          color: AppColors.green.withOpacity(0.1),
+                                          color: AppColors.green.withAlpha(25),
                                         ),
                                       ),
                                       Container(
@@ -183,7 +183,7 @@ class _OrderBookScreenState extends State<OrderBookScreen> {
                                         alignment: Alignment.centerLeft,
                                         child: Container(
                                           height: 28,
-                                          color: AppColors.red.withOpacity(0.1),
+                                          color: AppColors.red.withAlpha(25),
                                         ),
                                       ),
                                       Container(
@@ -249,7 +249,7 @@ class _OrderBookScreenState extends State<OrderBookScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                     decoration: BoxDecoration(
                       color: isSelected
-                          ? AppColors.primary.withOpacity(0.2)
+                          ? AppColors.primary.withAlpha(51)
                           : AppColors.cardBackground,
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(

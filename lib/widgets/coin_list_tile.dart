@@ -97,8 +97,8 @@ class CoinListTile extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
                   color: coin.isPriceUp
-                      ? AppColors.green.withOpacity(0.15)
-                      : AppColors.red.withOpacity(0.15),
+                      ? AppColors.green.withAlpha(38)
+                      : AppColors.red.withAlpha(38),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Text(

@@ -193,9 +193,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         child: Container(
                           padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
-                            color: AppColors.red.withOpacity(0.1),
+                            color: AppColors.red.withAlpha(25),
                             borderRadius: BorderRadius.circular(8),
-                            border: Border.all(color: AppColors.red.withOpacity(0.3)),
+                            border: Border.all(color: AppColors.red.withAlpha(77)),
                           ),
                           child: Text(
                             auth.error!,

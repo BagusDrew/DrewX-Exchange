@@ -46,18 +46,18 @@ class PortfolioScreen extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [AppColors.primary.withOpacity(0.2), AppColors.accent.withOpacity(0.1)],
+          colors: [AppColors.primary.withAlpha(51), AppColors.accent.withAlpha(25)],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.primary.withOpacity(0.3)),
+        border: Border.all(color: AppColors.primary.withAlpha(77)),
       ),
       child: Row(
         children: [
           CircleAvatar(
             radius: 24,
-            backgroundColor: AppColors.primary.withOpacity(0.3),
+            backgroundColor: AppColors.primary.withAlpha(77),
             child: Text(
               (auth.user?.displayName ?? 'U')[0].toUpperCase(),
               style: const TextStyle(

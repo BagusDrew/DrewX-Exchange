@@ -174,7 +174,7 @@ class _TradingScreenState extends State<TradingScreen> {
                 dotData: const FlDotData(show: false),
                 belowBarData: BarAreaData(
                   show: true,
-                  color: (isUp ? AppColors.green : AppColors.red).withOpacity(0.1),
+                  color: (isUp ? AppColors.green : AppColors.red).withAlpha(25),
                 ),
               ),
             ],
@@ -206,7 +206,7 @@ class _TradingScreenState extends State<TradingScreen> {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               decoration: BoxDecoration(
-                color: isSelected ? AppColors.primary.withOpacity(0.2) : Colors.transparent,
+                color: isSelected ? AppColors.primary.withAlpha(51) : Colors.transparent,
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
                   color: isSelected ? AppColors.primary : AppColors.border,
